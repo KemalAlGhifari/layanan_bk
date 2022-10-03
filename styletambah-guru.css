@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.5s;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    background-color: #f1f1f1;
+  }
+  /* .link ul .lebel-datamurid li a{
+    color: #22195C;
+  } */
+  
+  .kotak-kanan{
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2%;
+    left: 20%;
+    top: 90px;
+    width: 75%;
+    text-align: center;
+    align-items: center;
+    box-shadow: 2px 2px 10px 5px #dcdcea;
+  }
+  
+  
+  .garis{
+    width: 200px;
+    height: 2px;
+    background-color: #10227d;
+    position: absolute;
+    left: 350px;
+    border-radius: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .judul p{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 25px;
+    margin-left: 16%;
+  }
+  
+  table{
+    padding-top: 2px;
+    padding-left: 8%;
+    margin-top: 3%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 45px;
+    margin-bottom: 25px;
+    color: #68676E;
+  }
+  
+  /* table .table-pendataan{
+      padding-left: 8%;
+    margin-top: 3%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-bottom: 25px;
+    color: #68676E;
+  } */
+  
+  
+  td{
+    /* padding-right: 10px; */
+    line-height: 35px;
+    padding-left: 10px;
+    width: 60px;
+    text-align: left;
+    font-size: 13.5px;
+    width: 127px;
+  }
+  
+  td .input{
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 116vh;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f0f0f0;
+  }
+  
+  .btn-simpan{
+    margin-bottom: 40px;
+    width: 80px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #006400;
+    color: #ffff;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 2px 5px 5px #dcdcea;
+    margin-left: 62%;
+  }
+  
+  
+  /* .td-pendataanbuku{
+    width: 200px;
+  } */
+  
+  /* td .td_pendataanbuku{
+    width:2000px;
+  } */
+  
+  /* ini css side-bar */
+  .sidebar{
+    width: 250px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-color: #00246A;
+    float: left;
+    flex-direction: column;
+    position: sticky;
+  }
+  
+  .sidebar h2 {
+    color: white;
+  }
+  
+  .dashboard{
+    display: flex;
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 5%;
+    align-items: center;
+  }
+  
+  .dashboard i{
+    color: white; 
+    padding-right: 20px;
+  }
+  
+  .judul-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .judul p{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left: 4%;
+  }
+  
+  .list_menu ul li i{
+    margin-left: 40px;
+    color: #fff;
+  
+  }
+  
+  ul li a{
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .list_menu ul li:hover{
+    padding-left: 20px;
+    transition: .5s;
+  }
+  
+  
+  

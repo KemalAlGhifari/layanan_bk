@@ -45,7 +45,7 @@
         <p>DATA JADWAL KONSELING</p>
     </div>
     <div class="content">
-        <a style="width: fit-content;" href="tambahdataguru.html"><button class="btn">Tambah</button></a>
+        <a style="width: fit-content;" href="tambahdatajadwal.html"><button class="btn">Tambah</button></a>
         <div class="table_konten">
             <table>
                 <thead>

@@ -45,7 +45,7 @@
         <p>DATA GURU BIMBINGAN KONSELING</p>
     </div>
     <div class="content">
-        <a style="width: fit-content;" href="tambahdataguru.html"><button class="btn">Tambah</button></a>
+        <a style="width: fit-content;" href="tambah-gurubk.html"><button class="btn">Tambah</button></a>
         <div class="table_konten">
             <table>
                 <thead>
@@ -70,8 +70,8 @@
                             <td class='img'><img class='gambar' src='foto/$bk[2]'></td>
                             <td>$bk[profile_guru]</td>
                             <td>
-                                <a href='formedit_bk.php?id_guru=".$regular['id_guru']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
-                                <a href='hapus_bk.php?id_guru=".$regular['id_guru']."' onClick=\"return confirm('Yakin akan menghapus data?');\"><button class='btn-hapus'><i class='fa-sharp fa-solid fa-trash'></button></i></a>
+                                <a href='formedit_bk.php?id_guru=".$bk['id_guru']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
+                                <a href='hapus-gurubk.php?id_guru=".$bk['id_guru']."' onClick=\"return confirm('Yakin akan menghapus data?');\"><button class='btn-hapus'><i class='fa-sharp fa-solid fa-trash'></button></i></a>
                             </td>
                         <tr>
                     <tbody>";
