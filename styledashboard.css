@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #F1F1F1;
+    background-color: #ffff;
     display: flex;
     font-family: 'Poppins', sans-serif;
 }
@@ -19,8 +19,7 @@ body{
     height: 100vh;
     left: 0px;
     top: 0px;
-    background-color: #080C30;
-    float: left;
+    background-color: #00246A;
     flex-direction: column;
     position: sticky;
   }
@@ -49,9 +48,9 @@ body{
 }
 
 .judul p{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 500;
-    padding-top: 25px;
+    padding-top: 33px;
     padding-left: 4%;
   }
   
@@ -72,7 +71,8 @@ body{
   }
   
   .list_menu ul li:hover{
-    padding-left: 20px;
+    padding-left: 25px;
+    transition: .5s;
   }
   
   
@@ -100,9 +100,9 @@ body{
     border-radius: 5px;
     width: 100px;
     height: 40px;
-    border: solid 1px black;
+    border: solid 1px #dcdcdd;
     background-color: white;
-    left: 885px;
+    left: 790%;
     transition: 0.5s;
 }
 
@@ -112,8 +112,8 @@ body{
 }
 
 .btn:hover{
-    background-color: green;
-    color: #FFFFFF;
+    background-color: #c4cafd;
+    color: #000f;
     border: none;
 }
 
@@ -128,7 +128,7 @@ body{
 }
 
 .table_konten thead tr{
-    background-color: #080C30;
+    background-color: #00246A;
     color: #FFFFFF;
     text-align: center;
 }

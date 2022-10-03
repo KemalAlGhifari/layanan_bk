@@ -33,8 +33,8 @@
 
       <div class="list_menu">
           <ul>
-              <li><iconify-icon icon="ic:baseline-cake" style="color: white; margin-left: 40px;" width="20" height="20">h</iconify-icon><a href="table-gurubk.php">DATA GURU BK</a></li>
-              <li><iconify-icon icon="wpf:wedding-cake" style="color: white; margin-left: 40px;" width="20" height="20"></iconify-icon><a href="table-jadwal.php">JADWAL</a></li>
+              <li><iconify-icon icon="ph:student" style="color: white; margin-left: 40px" width="22" height="22"></iconify-icon><a href="table-gurubk.php">DATA GURU BK</a></li>
+              <li><iconify-icon icon="mdi:timetable" style="color: white; margin-left: 40px" width="22" height="22"></iconify-icon><a href="table-jadwal.php">JADWAL</a></li>
           </ul>
       </div>
     </div>
