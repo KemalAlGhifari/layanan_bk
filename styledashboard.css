@@ -1,0 +1,188 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F1F1F1;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* sidebar */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+  }
+  
+  .sidebar{
+    width: 250px;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    background-color: #080C30;
+    float: left;
+    flex-direction: column;
+    position: sticky;
+  }
+
+.sidebar h2 {
+    color: white;
+}
+  
+  .dashboard{
+    display: flex;
+    margin-left: 32px;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    padding: 5%;
+    align-items: center;
+  }
+  
+  .dashboard i{
+    color: white; 
+    padding-right: 20px;
+  }
+  
+.judul-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.judul p{
+    font-size: 30px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-left: 4%;
+  }
+  
+  .list_menu ul li i{
+    margin-left: 40px;
+    color: #fff;
+  }
+  
+  ul li a{
+    display: inline-block;
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+  }
+  
+  .list_menu ul li:hover{
+    padding-left: 20px;
+  }
+  
+  
+/* pembungkus table */
+.content{
+    box-sizing: border-box;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 40px;
+    position: relative;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    height: fit-content;
+    width: 74.5vw ;
+    border-radius: 30px;
+    padding: 20px 5px;
+    padding-left: 40px;
+    box-shadow: 0 0 5px rgba(0,0,0,10);
+}
+
+/* button tambah */
+.btn{
+    position: relative;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    width: 100px;
+    height: 40px;
+    border: solid 1px black;
+    background-color: white;
+    left: 885px;
+    transition: 0.5s;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover{
+    background-color: green;
+    color: #FFFFFF;
+    border: none;
+}
+
+/* TABLE */
+
+.table_konten table{
+    border-collapse: collapse;
+    font-size: 14px;
+    border-spacing:0 ;
+    width: 97%;
+    box-shadow: 0 0 8px rgba(0,0,0,20);
+}
+
+.table_konten thead tr{
+    background-color: #080C30;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.table_konten th,
+.table_konten td{
+    padding: 15px 15px;
+}
+
+.table_konten tbody tr{
+    border-bottom: solid #e0e0e0;
+    text-align: center;
+}
+
+.btn-edit{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-hapus{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    cursor: pointer;
+}
+
+i{
+    color: white;
+}
+
+.detail{
+    width: 300px;
+}
+
+.foto{
+    width: 100px;
+    height: 100px;
+    border-radius:50% ;
+}
+
+.img{
+    width: 150px;
+}
+
+.img img{
+    width: 100px;
+    height: 100px;
+}
+
+.gambar{
+    width: 100px;
+    height: 100px;
+}
