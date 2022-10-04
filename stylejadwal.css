@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.container{
+    display: flex;
+    width: 80%;
+    height: 80vh;
+    margin-top: 4%;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+    background-color: #DDEEF5;
+}
+
+.img img{
+    width: 230px;
+    height: 216px;
+    border-radius: 300px;
+    background: white;
+}
+
+.kiri{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center;
+    width: 50%;
+}
+.tulisan h3{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 52px;
+
+}
+
+.tulisan p{
+    width: 352px;
+    height: 52px;
+    margin-left: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 275;
+    font-size: 17px;
+    line-height: 26px;
+    text-align: center;
+    color: #00246A;
+}
+
+.kanan{
+    width: 50%;
+    height: fit-content;
+}
+
+table{
+  padding-top: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 45px;
+  margin-bottom: 25px;
+  color: #00246A;
+  width: 100%;
+}
+
+td{
+    /* padding-right: 10px; */
+    line-height: 35px;
+    padding-left: 10px;
+    width: 60px;
+    text-align: left;
+    width: 127px;
+    height: 54px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 38px;
+
+}
+
+
+td .input{
+    padding-left: 9px;
+    padding-right: 9px;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+  }
+
+  .btn-simpan{
+    margin-bottom: 40px;
+    width: 664px;
+    height: 40px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color:#00246A;
+    color: #ffff;
+    cursor: pointer;
+    border: 0px;
+    box-shadow: 2px 5px 5px #dcdcea;
+    margin-left: -65%;
+    margin-top: 45px;
+  }
