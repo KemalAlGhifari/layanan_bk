@@ -20,7 +20,7 @@ $query2 = mysqli_query($koneksi,$sql2);
   </head>
 </head>
 <body>
-    <div class="hero-section">
+<div class="hero-section">
         <nav>
           <ul>
             <li class="logo">StarKonseling</li>
@@ -30,25 +30,26 @@ $query2 = mysqli_query($koneksi,$sql2);
           </ul>
         </nav>
         <div class="hero-text">
-          <h1 class="header-text">HORIZON</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          <h1 class="header-text">StarKonseling</h1>
+          <p>Kami menyediakan konsultasi untuk murid-murid yang memiliki masalah didalam lingkungan sekolah maupun diluar sekolah</p>
+          <a href="#content2"><button>Buat jadwal</button></a>
         </div>
     </div>
 
     <div class="isi-content1">  
       <div class="container text-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3b" style="display: flex;justify-content: center;text-align: center;">
-          <!-- php -->
+          <!-- php -->         
           <?php while($card = mysqli_fetch_array($query2)){ ?>
-          <div class="col" style="width:20%; background-color:#ffffff ; border-radius:20px; padding-top: 10px; margin: 15px;">
+            <div class="col" style="width:20%; background-color:#dbd8d8 ; border-radius:20px; padding-top: 10px; margin: 15px;">
               <img src="foto/<?php echo $card["foto_guru"] ?>" alt="Avatar" style="width:100% ;height: 300px;">
               <div class="container">
-                <h4><b><?php echo $card["nama_guru"] ?></b></h4> 
+                <h4><b><?php echo $card["nama_guru"]?></b></h4>  
                 <div>
                   <button>konseling</button>
                 </div>
               </div>
-          </div>
+          </div>                
           <?php } ?>
           <!-- php end -->
         </div>
@@ -58,20 +59,20 @@ $query2 = mysqli_query($koneksi,$sql2);
     <div class="isi-content2">
       <div class="container text-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="display:flex ; text-align: center; justify-content: center;">
-            <!-- php -->
-            <?php while($card = mysqli_fetch_array($query)){ ?>
-          <div class="col" style="width:20%;; background-color:#d2cfca ; border-radius:20px; padding-top: 10px; margin: 15px;">
-              <img src="foto/<?php echo $card["foto_guru"] ?>" alt="Avatar" style="width:100%; height: 300px;background-color:white ;">
+          <!-- php -->
+          <?php while($card = mysqli_fetch_array($query)){ ?>
+            <div class="col" style="width:20%;; background-color:#d2cfca ; border-radius:20px; padding-top: 10px; margin: 15px; ">
+              <img src="foto/<?php echo $card["foto_guru"] ?>" alt="Avatar" style="width:100%; height: 300px;">
               <div class="container">
-                <h4><b><?php echo $card["nama_guru"] ?></b></h4> 
-
+                <h4><b>John Doe</b></h4> 
                 <div>
-                  <a href="content.php?id_guru=<?php echo $card['id_guru'] ?>"><button>selengkapnya</button></a>
+                <a href="content.php?id_guru=<?php echo $card['id_guru'] ?>"><button>selengkapnya</button></a>
                 </div>
               </div>
           </div>
           <?php } ?>
-          <!-- php end -->
+            <!-- php end -->
+            
     
       
         </div>
