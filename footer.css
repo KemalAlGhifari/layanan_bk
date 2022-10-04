@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    background: #f1f1f1;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: #00246A;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .container{
+    display: flex;
+    flex-wrap:wrap ;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .container .sec{
+    margin-right: 30px;
+}
+
+footer .rumahkue{
+    width: 35%;
+}
+
+footer h2{
+    position: relative;
+    color: #ffff;
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+footer .rumahkue p{
+    color: #F0F1F3;
+    font-weight: 300;
+}
+
+
+
+.produk{
+    position: relative;
+    width: 15%;
+    margin-left: -2%;
+}
+
+.produk ul li{
+    list-style: none;
+}
+
+.produk ul li a{
+    color: #F0F1F3;
+    font-weight: 300;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.produk li a:hover{
+    color: #ccdaf4;
+}
+
+.kontak{
+    width: 10%;
+}
+
+.kontak ul{
+    position: relative;
+}
+
+.kontak ul li{
+    list-style: none;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.kontak li a{
+    text-decoration: none;
+    font-weight: 300;
+    color: #F0F1F3;
+}
+
+.kontak i{
+    color: #ffff;
+}
+
+.kontak li span{
+    margin-left: 10px;
+}
+
+.kontak ul li a:hover{
+    color: #ccdaf4;
+}
+
+.alamat{
+    width: 20%;
+}
+
+.alamat ul{
+    position: relative;
+}
+
+.alamat ul li{
+    list-style: none;
+    display: flex;
+}
+
+.alamat li a{
+    text-decoration: none;
+    color: #F0F1F3;
+    font-weight: 300;
+    font-weight: normal;
+}
+
+.alamat{
+    color: #ffff;
+    margin-left: 10px;
+}
+
+.alamat ul li a:hover{
+    color: #ccdaf4;
+}
+
