@@ -1,3 +1,12 @@
+<?php 
+include "koneksi.php";
+$id_guru = $_GET['id_guru'];
+$sql = "SELECT * FROM tb_guru WHERE id_guru=$id_guru";
+$query = mysqli_query($koneksi,$sql);
+$card = mysqli_fetch_array($query);
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +27,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="892b9664-9549-4cc7-a2d8-76fb2c6a9279";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 <body>
-<?php 
-    $sql = "SELECT * FROM contentBK WHERE id_bk= '$id_bk'";
-    $data = mysqli_query($koneksi, $sql);
-    while($pel = mysqli_fetch_array($data)){
-?>
     <!-- ini navbar -->
     <nav>
-        <iconify-icon icon="ic:baseline-navigate-next" rotate="180deg"  style="cursor: pointer; font-size: 25px;"></iconify-icon>
+        <a href="landing.php"><iconify-icon icon="ic:baseline-navigate-next" rotate="180deg"  style="cursor: pointer; font-size: 25px;"></iconify-icon></a>
         <p id="tulisan-nav">Detail BK</p>
     </nav>
 
@@ -38,7 +42,7 @@
     </div>
     <div class="content">
         <div class="gambar">
-            <img src="../layanan_bk/img/bk1.png" alt="foto_ricky">
+            <img src="foto/<?php echo $card['foto_guru'] ?>" alt="foto_ricky">
         </div>
 
         <div class="kotak1">
@@ -48,7 +52,7 @@
 
         <div class="kotak2">
             <div class="melayani">
-                <p id="bk">Ricky Sudrajat</p>
+                <p id="bk"><?php echo $card["nama_guru"] ?></p>
                 <hr>
                 <div class="melayani-via">
                     <p id="via">Melayani Via :</p>
@@ -58,12 +62,12 @@
                 <hr>
             </div>
             <div class="profile-ricky">
-                <p id="judul-profile">Profile Ricky Sudrajat</p>
-                <p id="deskripsi">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod ad nesciunt repellendus corporis repudiandae. Optio ab minima ad iusto, natus, soluta nesciunt id dolores ducimus neque a. Et, tempore voluptatum cumque nemo minima quam rem voluptatibus, eos illum amet sint, tempora itaque libero voluptatem deserunt ducimus iusto. Molestiae, ratione perspiciatis?</p>
+                <p id="judul-profile">Profile <?php echo $card["nama_guru"]  ?></p>
+                <p id="deskripsi"><?php echo $card["profile_guru"] ?></p>
             </div>
 
             <div class="input">
-                <input type="button" value="Buat Jadwal dengan Ricky">
+                <a href="form_jadwal.php?id_guru=<?php echo $card['id_guru'] ?>"><input type="button" value="Buat Jadwal dengan <?php echo $card['nama_guru'] ?>"></a>
             </div>
         </div>
     </div>
@@ -97,7 +101,6 @@
             </div>
         </div>
     </footer>
-    <?php }?>
     </div>
 </body>
 </html>

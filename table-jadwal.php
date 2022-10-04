@@ -70,7 +70,7 @@
                             <td>$jadwal[kelas_murid]</td>
                             <td>$jadwal[topik_konseling]</td>
                             <td>
-                                <a href='formedit_bk.php?id_guru=".$jadwal['id_guru']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
+                                <a href='formedit_bk.php?id_murid=".$jadwal['id_murid']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
                             </td>
                         <tr>
                     <tbody>";

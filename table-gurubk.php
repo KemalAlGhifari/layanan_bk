@@ -70,7 +70,7 @@
                             <td class='img'><img class='gambar' src='foto/$bk[2]'></td>
                             <td>$bk[profile_guru]</td>
                             <td>
-                                <a href='formedit_bk.php?id_guru=".$bk['id_guru']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
+                                <a href='formedit-guru.php?id_guru=".$bk['id_guru']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
                                 <a href='hapus-gurubk.php?id_guru=".$bk['id_guru']."' onClick=\"return confirm('Yakin akan menghapus data?');\"><button class='btn-hapus'><i class='fa-sharp fa-solid fa-trash'></button></i></a>
                             </td>
                         <tr>

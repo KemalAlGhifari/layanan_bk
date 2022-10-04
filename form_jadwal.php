@@ -1,3 +1,12 @@
+<?php 
+include "koneksi.php";
+$id_guru=$_GET['id_guru'];
+$sql="SELECT * FROM tb_guru WHERE id_guru=$id_guru";
+$query = mysqli_query($koneksi,$sql);
+$card = mysqli_fetch_array($query)
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,26 +25,40 @@
     <div class="container">
         <div class="kiri">
             <div class="img">
-                <img src="foto/student (1).png">
+                <img src="foto/<?php echo $card['foto_guru'] ?>">
             </div>
             <div class="tulisan">
                 <h3>Hallo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid veniam illum ut assumenda necessitatibus consectetur.</p>
+                <p><?php echo $card ['profile_guru'] ?></p>
             </div>
             
         </div>
         <div class="kanan">
-        <form enctype="multipart/form-data" action="edit_regular.php" method="post">
+        <form enctype="multipart/form-data" action="tambahjadwal.php" method="post">
         <table>
             <tr>
-                <td><input class="input" type="hidden" name="id_murid" required="required"></td>
+                <td><input value="<?php echo $card['id_guru'] ?>" class="input" type="hidden" name="id_guru" required="required"></td>
+            </tr>
+
+            <tr>
+                <td><input autocomplete="off" value="<?php echo $card['nama_guru'] ?>" class="input" type="hidden" name="nama_guru" required="required"></td>
+            </tr>
+            <tr>
+                <td><input type="hidden" value="<?php echo $card['foto_guru']?>" name="foto_guru"></td> 
+            </tr>
+
+            <tr>
+                <td><input autocomplete="off" value="<?php echo $card['profile_guru'] ?>" class="input" type="hidden" name="profile_guru" required="required"></td>
+            </tr>
+            <tr>
+                <td><input class="input"  type="hidden" name="id_murid" required="required"></td>
             </tr>
 
             <tr>
             <td><Label>Nama Siswa</Label></td>
             </tr>
             <tr>
-                <td><input  class="input" type="text" name="nama_murid" required="required"></td>
+                <td><input  class="input" type="text" name="nama_murid" required="required" ></td>
             </tr>
 
             <tr>
@@ -53,7 +76,7 @@
             </tr>
             
         </table>
-        <input type="submit" name="simpan" value="Buat Jadwal" class="btn-simpan">
+        <input type="submit" name="jadwal" value="Buat Jadwal" class="btn-simpan">
         </form>
         </div>
         
