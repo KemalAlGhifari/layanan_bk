@@ -102,7 +102,7 @@ body{
     height: 40px;
     border: solid 1px #dcdcdd;
     background-color: white;
-    left: 790%;
+    left: 990%;
     transition: 0.5s;
 }
 
@@ -112,7 +112,7 @@ body{
 }
 
 .btn:hover{
-    background-color: #c4cafd;
+    background-color: green;
     color: #000f;
     border: none;
 }

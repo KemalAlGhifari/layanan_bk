@@ -45,7 +45,7 @@
         <p>DATA JADWAL KONSELING</p>
     </div>
     <div class="content">
-        <a style="width: fit-content;" href="tambahdatajadwal.html"><button class="btn">Tambah</button></a>
+        
         <div class="table_konten">
             <table>
                 <thead>
@@ -71,6 +71,7 @@
                             <td>$jadwal[topik_konseling]</td>
                             <td>
                                 <a href='formedit_bk.php?id_murid=".$jadwal['id_murid']."'><button class='btn-edit'><i class='fa-solid fa-pen-to-square fa'></i></button></a>
+                                <a href='hapus_jadwal.php?nama_guru=".$jadwal['nama_guru']."' onClick=\"return confirm('Yakin akan menghapus data?');\"><button class='btn-hapus'><i class='fa-sharp fa-solid fa-trash'></button></i></a>
                             </td>
                         <tr>
                     <tbody>";

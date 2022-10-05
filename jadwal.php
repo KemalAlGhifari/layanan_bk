@@ -21,7 +21,7 @@ $card2 = mysqli_fetch_array($query2);
     <?php echo $card2['crisp'] ?>
 
     <!-- style css -->
-    <link rel="stylesheet" href="stylecontent_profile-bk.css">
+    <link rel="stylesheet" href="stylecontent_jadwal-bk.css">
 
     <!-- font iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
@@ -33,6 +33,53 @@ $card2 = mysqli_fetch_array($query2);
 
     <!-- font awesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+        <style>
+            body{
+                font-family: 'Poppins', sans-serif;
+            }
+            .footer{
+  width: 100%;
+  height: 300px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #01205e;
+  color: white;
+}
+
+.footer p:first-child{
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 0px;
+}
+
+.footer p:nth-child(2){
+  width: 700px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.list-icon{
+  display: flex;
+  width: 250px;
+  justify-content: space-evenly; 
+}
+
+.list-icon div{
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-top: 20px;
+  color: black;
+}
+        </style>
 </head>
 <body>
     <!-- ini navbar -->
@@ -63,7 +110,7 @@ $card2 = mysqli_fetch_array($query2);
                 <hr>
             </div>
             <div class="profile-ricky">
-                <p id="judul-profile">Topik Konseling</p>
+                <p style="margin-bottom: 20px;" id="judul-profile">Topik Konseling</p>
                 <p id="deskripsi"><?php echo $card["topik_konseling"] ?></p>
             </div>
 
@@ -71,34 +118,15 @@ $card2 = mysqli_fetch_array($query2);
     </div>
 
     <div class="footer">
-        <footer>
-        <div class="container">
-            <div class="sec rumahkue">
-                <h2>StarKonseling</h2>
-                <p>StarKonseling merupakan website untuk membantu para murid SMK Taruna Bhakti dalam permasalahan didalam sekolah maupun diluar sekolah.</p>
-            </div>
-            <div class="produk">
-                <h2>Jadwal Konseling</h2>
-                <ul>
-                    <li><a href="#">table</a></li>
-                </ul>
-            </div>
-            <div class="kontak">
-                <h2>Konselor</h2>
-                <ul>
-                    <li><a href="#">Ricky Sudrajat</a></li>
-                    <li><a href="#">Rina Sujagat</a></li>
-                    <li><a href="#">Caca Kasandra</a></li>
-                </ul>
-            </div>
-            <div class="alamat">
-                <h2>Address</h2>
-                <ul>
-                    <li><a href="#">Jln. Raya Pekapuran, Curug, Kec. Cimanggis, Kota Depok Prov. Jawa Barat</a></li>
-                </ul>
-            </div>
+        <p>StarKonseling</p>
+        <p>StarKonseling merupakan website untuk membantu para murid SMK Taruna Bhakti dalam permasalahan didalam sekolah maupun diluar sekolah.</p>
+
+        <div class="list-icon">
+            <div><i class="fa-brands fa-facebook-f"></i></div>
+            <div><i class="fa-brands fa-whatsapp"></i></div>
+            <div><i class="fa-brands fa-instagram"></i></div>
+            <div><i class="fas fa-inbox"></i></div>
         </div>
-    </footer>
     </div>
 </body>
 </html>

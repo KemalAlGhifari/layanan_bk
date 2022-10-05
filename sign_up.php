@@ -46,7 +46,8 @@ include "koneksi.php"
                             $queryInsert = mysqli_query($koneksi, "INSERT INTO user (email, password) VALUES('$email', '$encryptedpassword')");
                             
                             if($queryInsert){
-                                echo '<script>alert("Register success")</script>'; 
+                                echo '<script>alert("Register success")</script>';
+                                header('location: sign_in.php');
                             }
                         }
                     }
