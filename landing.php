@@ -1,7 +1,8 @@
 <?php 
 include "koneksi.php";
 $sql = "SELECT * FROM tb_guru";
-$sql2 ="SELECT * FROM jadwalguru";
+$sql2 ="SELECT * FROM jadwal JOIN jadwalguru WHERE jadwal.nama_guru = jadwalguru.nama_guru";
+
 $query = mysqli_query($koneksi,$sql);
 $query2 = mysqli_query($koneksi,$sql2);
 
@@ -45,8 +46,8 @@ $query2 = mysqli_query($koneksi,$sql2);
               <img src="foto/<?php echo $card["foto_guru"] ?>" alt="Avatar" style="width:100% ;height: 300px;">
               <div class="container">
                 <h4><b><?php echo $card["nama_guru"]?></b></h4>  
-                <div>
-                  <button>konseling</button>
+                <div><a href="jadwal.php?id_murid=<?php echo $card['id_murid']?>&id_guru=<?php echo $card['id_guru'] ?>"><button>konseling</button></a>
+                  
                 </div>
               </div>
           </div>                
@@ -64,7 +65,7 @@ $query2 = mysqli_query($koneksi,$sql2);
             <div class="col" style="width:20%;; background-color:#d2cfca ; border-radius:20px; padding-top: 10px; margin: 15px; ">
               <img src="foto/<?php echo $card["foto_guru"] ?>" alt="Avatar" style="width:100%; height: 300px;">
               <div class="container">
-                <h4><b>John Doe</b></h4> 
+                <h4><b><?php echo $card['nama_guru'] ?></b></h4> 
                 <div>
                 <a href="content.php?id_guru=<?php echo $card['id_guru'] ?>"><button>selengkapnya</button></a>
                 </div>

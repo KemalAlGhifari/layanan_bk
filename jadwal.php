@@ -1,9 +1,13 @@
 <?php 
 include "koneksi.php";
+$id_murid = $_GET['id_murid'];
 $id_guru = $_GET['id_guru'];
-$sql = "SELECT * FROM tb_guru WHERE id_guru=$id_guru";
+$sql = "SELECT * FROM jadwal WHERE id_murid=$id_murid";
 $query = mysqli_query($koneksi,$sql);
 $card = mysqli_fetch_array($query);
+$sql2 = "SELECT * FROM jadwalguru WHERE id_guru=$id_guru";
+$query2 = mysqli_query($koneksi,$sql2);
+$card2 = mysqli_fetch_array($query2);
 ?>
 
 
@@ -14,6 +18,7 @@ $card = mysqli_fetch_array($query);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile BK</title>
+    <?php echo $card2['crisp'] ?>
 
     <!-- style css -->
     <link rel="stylesheet" href="stylecontent_profile-bk.css">
@@ -40,18 +45,15 @@ $card = mysqli_fetch_array($query);
 
     </div>
     <div class="content">
-        <div class="gambar">
-            <img src="foto/<?php echo $card['foto_guru'] ?>" alt="foto_ricky">
-        </div>
 
         <div class="kotak1">
             <div class="wadah-gambar">
             </div>
         </div>
 
-        <div class="kotak2">
+        <div  class="kotak2">
             <div class="melayani">
-                <p id="bk"><?php echo $card["nama_guru"] ?></p>
+                <p id="bk"><?php echo $card['nama_murid']?> <?php echo $card['kelas_murid']?></p>
                 <hr>
                 <div class="melayani-via">
                     <p id="via">Melayani Via :</p>
@@ -61,13 +63,10 @@ $card = mysqli_fetch_array($query);
                 <hr>
             </div>
             <div class="profile-ricky">
-                <p id="judul-profile">Profile <?php echo $card["nama_guru"]  ?></p>
-                <p id="deskripsi"><?php echo $card["profile_guru"] ?></p>
+                <p id="judul-profile">Topik Konseling</p>
+                <p id="deskripsi"><?php echo $card["topik_konseling"] ?></p>
             </div>
 
-            <div class="input">
-                <a href="form_jadwal.php?id_guru=<?php echo $card['id_guru'] ?>"><input type="button" value="Buat Jadwal dengan <?php echo $card['nama_guru'] ?>"></a>
-            </div>
         </div>
     </div>
 

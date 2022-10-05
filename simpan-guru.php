@@ -4,9 +4,10 @@
     $file_tmp = $_FILES['foto_guru']['tmp_name'];
     $nama = $_POST['nama_guru'];
     $profile = $_POST['profile_guru'];
+    $crisp = $_POST['crisp'];
 
     move_uploaded_file($file_tmp, 'foto/'.$foto);
-    $query = "INSERT INTO `tb_guru` VALUES (NULL, '$nama', '$foto', '$profile');";
+    $query = "INSERT INTO `tb_guru` VALUES (NULL, '$nama', '$foto', '$profile','$crisp');";
     mysqli_query($koneksi, $query)
     or die("SQL Error");
     header("location:table-gurubk.php")

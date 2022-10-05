@@ -48,6 +48,10 @@ $card = mysqli_fetch_array($query)
             </tr>
 
             <tr>
+                <td><input type="hidden" value='<?php echo $card['crisp'] ?>' name="crisp"></td> 
+            </tr>
+
+            <tr>
                 <td><input autocomplete="off" value="<?php echo $card['profile_guru'] ?>" class="input" type="hidden" name="profile_guru" required="required"></td>
             </tr>
             <tr>

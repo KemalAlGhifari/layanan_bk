@@ -60,6 +60,7 @@ body{
 }
 
 .kanan{
+    margin-top: -25%;
     width: 50%;
     height: fit-content;
 }
