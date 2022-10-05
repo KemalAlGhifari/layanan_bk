@@ -37,6 +37,12 @@ $query2 = mysqli_query($koneksi,$sql2);
         </div>
     </div>
 
+    <div style="display: flex; text-align: center; justify-content: space-evenly; margin: 30px auto -80px;" >
+      <div style="border: 1px none black; width: 40%;"><hr style="border:black solid;"></div>
+      <div><h2>JADWAL KONSELING</h2></div>
+      <div style="border: 1px none black; width: 40%;"><hr style="border:black solid;"></div>
+     </div>
+
     <div class="isi-content1">  
       <div class="container text-center">
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3b" style="display: flex;justify-content: center;text-align: center;">
@@ -57,8 +63,9 @@ $query2 = mysqli_query($koneksi,$sql2);
       </div>
     </div>
 
-    <div class="isi-content2">
+    <div class="isi-content2" id="content2">
       <div class="container text-center">
+        <div style="background-color: #DAED03; padding: 10px; border-radius:5px ; width: 30%; margin: 0 auto; position: relative; top: -40px; color: black;"><h2>GURU BK</h2></div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="display:flex ; text-align: center; justify-content: center;">
           <!-- php -->
           <?php while($card = mysqli_fetch_array($query)){ ?>
